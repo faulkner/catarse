@@ -1,10 +1,9 @@
-#encoding: utf-8
 ActiveAdmin::Dashboards.build do
 
-  section "Relatorios" do
+  section "Reports" do
     ul do
-      li link_to 'Usuários que mais apoiaram', most_backed_report_path
-      li link_to 'Todos os apoios confirmados', all_confirmed_backers_report_path
+      li link_to 'most backed', most_backed_report_path
+      li link_to 'all confirmed backers', all_confirmed_backers_report_path
     end
   end
 
@@ -42,5 +41,11 @@ ActiveAdmin::Dashboards.build do
   #   section "Recent User", :priority => 1
   #
   # Will render the "Recent Users" then the "Recent Posts" sections on the dashboard.
+
+  # == Conditionally Display
+  # Provide a method name or Proc object to conditionally render a section at run time.
+  #
+  # section "Membership Summary", :if => :memberships_enabled?
+  # section "Membership Summary", :if => Proc.new { current_admin_user.account.memberships.any? }
 
 end
