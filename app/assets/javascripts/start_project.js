@@ -2,8 +2,8 @@ everything_ok = function(){
   var all_ok = true
   if(!ok('#about'))
     all_ok = false
-  if(!ok('#rewards'))
-    all_ok = false
+  //if(!ok('#rewards'))
+    //all_ok = false
   if(!ok('#links'))
     all_ok = false
   if(!contact_ok())
@@ -41,7 +41,7 @@ accepted_terms = function(){
   return $('#accept').is(':checked')
 }
 $('#about').keyup(everything_ok)
-$('#rewards').keyup(everything_ok)
+//$('#rewards').keyup(everything_ok)
 $('#links').keyup(everything_ok)
 $('#contact').keyup(everything_ok)
 $('#accept').click(everything_ok)
