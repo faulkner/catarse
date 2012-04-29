@@ -124,13 +124,13 @@ class User < ActiveRecord::Base
     u = create! do |user|
       user.provider = auth["provider"]
       user.uid = auth["uid"]
-      user.name = auth["user_info"]["name"]
-      user.name = auth["user_info"][:name] if user.name.nil?
-      user.email = auth["user_info"]["email"]
+      user.name = auth["info"]["name"]
+      user.name = auth["info"][:name] if user.name.nil?
+      user.email = auth["info"]["email"]
       user.email = auth["extra"]["user_hash"]["email"] if auth["extra"] and auth["extra"]["user_hash"] and user.email.nil?
-      user.nickname = auth["user_info"]["nickname"]
-      user.bio = auth["user_info"]["description"][0..139] if auth["user_info"]["description"]
-      user.image_url = auth["user_info"]["image"]
+      user.nickname = auth["info"]["nickname"]
+      user.bio = auth["info"]["description"][0..139] if auth["info"]["description"]
+      user.image_url = auth["info"]["image"]
       user.locale = I18n.locale.to_s
     end
     # If we could not associate by email we try to use the parameter
