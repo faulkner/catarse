@@ -1,0 +1,7 @@
+revamp style with bootstrap or other framework so this loads on phones better
+integration with other payment gateways (dwolla, square, etc - anything cheaper than paypal; see https://github.com/herestomwiththeweather/lascon-oauth/blob/master/examples/dwolla_pay.rb)
+add missing project fields (location, industry, etc)
+move facebook creds to yaml
+auto-approve new projects
+make videos optional
+port to coffeescript
