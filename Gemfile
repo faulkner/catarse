@@ -14,6 +14,7 @@ gem 'sass-rails'
 gem 'compass', '0.11.5'
 gem 'omniauth'
 gem 'omniauth-openid'
+gem 'omniauth-facebook'
 gem 'formtastic', '~> 2.0.0'
 gem 'validation_reflection', :git => 'https://github.com/ncri/validation_reflection.git'
 gem 'inherited_resources'
@@ -60,6 +61,7 @@ end
 group :development do
   gem 'thin'
   gem 'ruby-debug19', :require => 'ruby-debug'
+  gem 'rails-dev-tweaks', '~> 0.6.1'
 end
 
 group :test, :development do
