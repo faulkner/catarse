@@ -49,6 +49,7 @@ gem "devise"
 
 group :development do
   gem 'thin'
+  gem 'ruby-debug19', :require => 'ruby-debug'
 end
 
 group :test, :development do
