@@ -1,5 +1,6 @@
 %head
   %meta{:charset => 'utf-8'}
+  %meta(name="viewport" content="width=device-width, initial-scale=1.0")
   %meta{:name => "robots", :content => "index, follow"}
   %meta{:name => "author", :content => "Softa"}
   = yield :meta_tags
@@ -9,14 +10,16 @@
     - else
       == #{yield :title} · #{t('site.name')}
 
+  = csrf_meta_tag
+  /[if lt IE 9]
+    = javascript_include_tag "http://html5shim.googlecode.com/svn/trunk/html5.js"
   = stylesheet_link_tag 'le-frog/jquery-ui-1.8.6.custom.css', :media => 'screen, projection'
   = stylesheet_link_tag 'screen.css', :media => 'screen, projection'
-  /[if lt IE 9]
-    = javascript_include_tag "http://html5shiv.googlecode.com/svn/trunk/html5.js"
-  = javascript_include_tag 'jquery-1.4.4.min', 'jquery-ui-1.8.6.custom.min', 'jquery.ui.datepicker-pt-BR', 'jquery.numeric', 'jquery.maxlength', 'jquery.timers-1.2', 'timedKeyup', 'underscore-min', 'backbone-min', 'mustache', 'waypoints.min', 'jquery.jeditable.mini','on_the_spot'
+  = stylesheet_link_tag "application", :media => "all"
+  = javascript_include_tag "application"
+  %link(href="/images/favicon.ico" rel="shortcut icon")
+
+  = javascript_include_tag 'jquery-ui-1.8.6.custom.min', 'jquery.numeric', 'jquery.maxlength', 'jquery.timers-1.2', 'timedKeyup', 'underscore-min', 'backbone-min', 'mustache', 'waypoints.min', 'jquery.jeditable.mini','on_the_spot'
   = javascript_include_tag 'jquery.scrollto'
-  = csrf_meta_tag
-  %link{ :rel => 'shortcut icon', :href => "/images/favicon.ico" }
   -#= render '/layouts/analytics'
   -#= render "/layouts/uservoice"
-

@@ -48,7 +48,13 @@ gem 'httparty'
 gem 'rack-timeout'
 gem 'web_translate_it'
 gem 'devise'
-gem 'prototype-rails'
+gem 'therubyracer'
+
+group :assets do
+  gem 'sass-rails'
+  gem 'coffee-rails', '~> 3.2.1'
+  gem 'uglifier', '>= 1.0.3'
+end
 
 group :development do
   gem 'thin'
