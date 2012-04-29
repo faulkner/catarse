@@ -347,8 +347,8 @@ en:
     create:
       success: "Your project was successfully created! We'll soon contact you. Thanks a lot!"
     curated_pages_list:
-      subtitle: "Discover projects curated by some of our cathartic partners"
-      title: "Cathartic channels"
+      subtitle: "Discover projects curated by some of our partners"
+      title: "Channels"
     form:
       add_reward: "Add reward"
       important_html: "Please notice that Catarse will charge 7.5% if your project is successful, and our payment gateways (MoIP and Paypal) charge a fee that varies, usually, from 4% to 5% per transaction. Add this values to your budget in order to execute your project with no surprises."
@@ -360,8 +360,8 @@ en:
       submit: "Submit project"
     home_page_projects:
       explore_recommended: "Explore more recommended projects"
-      subtitle: "Discover the projects that caused us a Catharsis :) every day a new selection."
-      title: "Our cathartic selection!"
+      subtitle: ""
+      title: "Featured projects"
     index:
       expiring: "Final countdown"
       recent: "Recent projects"
