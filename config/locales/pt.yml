@@ -127,11 +127,10 @@ pt:
       updated_not_active: "Sua senha foi alterada com sucesso."
     registrations:
       destroyed: "Bye! Sua conta foi cancelada com sucesso. Nós esperamos vê-lo novamente em breve."
-      inactive_signed_up: "Você se registrou com sucesso. No entanto, não poderia efetuar login porque a sua conta é %{reason}."
-      reasons:
-        inactive: inativo
-        locked: bloqueado
-        unconfirmed: "não confirmado"
+      signed_up_inactive: "Você se registrou com sucesso. No entanto, não poderia efetuar login porque a sua conta é %{reason}."
+      signed_up_but_inactive: inativo
+      signed_up_but_locked: bloqueado
+      signed_up_but_unconfirmed: "não confirmado"
       signed_up: "Bem vindo! Você se registrou com sucesso."
       updated: "Você atualizou a sua conta com sucesso."
     sessions:

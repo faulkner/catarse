@@ -83,7 +83,7 @@ RSpec.configure do |config|
   config.include NavigationHelpers
   config.include HelperMethods
   config.include Rack::Test::Methods
-  config.include Factory::Syntax::Methods
+  config.include FactoryGirl::Syntax::Methods
 
   config.mock_with :mocha
 

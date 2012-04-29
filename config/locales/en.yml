@@ -127,11 +127,10 @@ en:
       updated_not_active: "Your password was changed successfully."
     registrations:
       destroyed: "Bye! Your account was successfully cancelled. We hope to see you again soon."
-      inactive_signed_up: "You have signed up successfully. However, we could not sign you in because your account is %{reason}."
-      reasons:
-        inactive: inactive
-        locked: locked
-        unconfirmed: unconfirmed
+      signed_up_inactive: "You have signed up successfully. However, we could not sign you in because your account is %{reason}."
+      signed_up_but_inactive: inactive
+      signed_up_but_locked: locked
+      signed_up_but_unconfirmed: unconfirmed
       signed_up: "Welcome! You have signed up successfully."
       updated: "You updated your account successfully."
     sessions:
