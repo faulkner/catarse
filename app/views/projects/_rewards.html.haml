@@ -18,7 +18,7 @@
       - if current_user and current_user.admin
         #{on_the_spot_edit reward, :description, :type => :textarea}
       - else
-        = auto_link(reward.description, :html => {:target => :_blank})
+        = Rinku.auto_link(reward.description, :html => {:target => :_blank})
       .clear
       .reward_backers
         = pluralize reward.backers.confirmed.count, t('backer_singular'), t('backer_plural')

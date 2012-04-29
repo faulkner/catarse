@@ -23,7 +23,7 @@ class Project < ActiveRecord::Base
       '>' => '&gt;',
       '<' => '&lt;',
       '"' => '"' }
-    redcloth :target => :_blank
+    redcarpet :target => :_blank
     youtube :width => 580, :height => 378
     vimeo :width => 580, :height => 378
     link :target => :_blank
