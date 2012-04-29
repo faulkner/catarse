@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 
   helper_method :current_user, :replace_locale, :align_logo_when_home, :is_homepage?
   before_filter :set_locale
-  before_filter :detect_locale
+  #before_filter :detect_locale
 
   private
 
