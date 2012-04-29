@@ -10,7 +10,7 @@
         #header
           %h1{:class=>"#{align_logo_when_home}"}
             = link_to root_path do
-              = image_tag "logo.png", :title => t('site.name')
+              %p= t('site.name')
           = render '/layouts/user' if current_user
           #menu
             %ul
